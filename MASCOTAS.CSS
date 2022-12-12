@@ -1,0 +1,331 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(212, 209, 209);
+}
+.header{
+    background-color:cyan;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f0f8ff;
+    font-size: 16px;
+} 
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight:lighter;
+    color: black;
+}
+.container{
+    background-color:darkblue;
+    color:white
+}
+header a:hover{
+    color:blueviolet;
+}
+   
+#luis{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagen/gato1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#luis.comp{
+    display: flex;
+    text-align: center;
+
+}
+#vitamina{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("imagen/GATO2.jpeg");
+}
+
+#vitamina .container{
+    padding: 15px 12px;
+}
+
+#vitamina h1{
+    margin-top: 5px;
+    font-size: 3.2em;
+}
+
+#vitamina p{
+    display: flex;
+}
+#vitamina li{
+    display: flex;
+}
+#perro{
+    padding: 100px 50px;
+    text-align: center;
+    justify-content: center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("imagen/perro1.jpeg");
+}
+#perro.yill{
+    
+    padding: 15px 12px;
+   
+    
+}
+#perro h1{
+    color: aliceblue;
+    margin-top: 10px;
+    font-size: 4em;
+}
+#perro p{
+    color: aliceblue;
+    display: flex;
+    align-self: center;
+}
+#perro.carta{
+    background-color: rgba(0, 0, 255, 0.384);
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+#lorena{
+    column-gap: 5px;
+    display: flex;
+    margin: 5px;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("imagen/perro2.jpeg");
+    
+}
+#chuli{
+    display: flex;
+    margin-top: 10px;
+}
+.quees h1{
+    text-decoration: underline;
+    align-content: center;
+}
+.quees p{
+    display: inline-block;
+    justify-content: center;
+}
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: rgb(255, 255, 255);
+    height: 80vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url("imagen/nitrato.jpeg");
+}
+
+#final h2{
+    font-size: 9vw;
+}
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#jas-footer{
+    background-color:#b2b2b2;
+    justify-content: flex-end;
+    column-gap: 100px;
+    column-width: 200px;
+    color:black;
+    margin: 6px;
+}
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction:column;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+}
+@media(min-width:450px){
+    #luis{
+        display: flex;
+        text-align: center;
+    }
+    #luis.comp{
+        display: flex;
+        text-align: center;
+        column-count: unset;    
+    
+    }
+    #vitamina{
+        background-color: rgb(30,30,30);
+        color: white;
+        text-align: center;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("imagen/GATO2.jpeg");
+    }
+    
+    #vitamina .container{
+        padding: 15px 12px;
+    }
+    
+    #vitamina h1{
+        margin-top: 5px;
+        font-size: 3.2em;
+    }
+    
+    #vitamina p{
+        display: flex;
+    }
+    #vitamina li{
+        display: flex;
+    }
+    #perro{
+        padding: 100px 50px;
+        text-align: center;
+        justify-content: center;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("imagen/perro1.jpeg");
+    }
+    #perro.yill{
+        
+        padding: 15px 12px;
+       
+        
+    }
+    #perro h1{
+        color: aliceblue;
+        margin-top: 10px;
+        font-size: 4em;
+    }
+    #perro p{
+        color: aliceblue;
+        display: flex;
+        align-self: center;
+    }
+    #perro.carta{
+        background-color: rgba(0, 0, 255, 0.384);
+        background-position: center center;
+        background-size: cover;
+        padding: 50px 0px;
+        margin: 30px;
+        border-radius: 15px;
+    }
+    #lorena{
+        column-gap: 5px;
+        display: flex;
+        margin: 5px;
+        background-image: linear-gradient(
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),url("imagen/perro2.jpeg");
+        
+    }
+    #chuli{
+        display: flex;
+        margin-top: 10px;
+    }
+    .quees h1{
+        text-decoration: underline;
+        align-content: center;
+    }
+    .quees p{
+        display: inline-block;
+        justify-content: center;
+    }
+    #final{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(30, 30, 30);
+        color: rgb(255, 255, 255);
+        height: 80vh;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ), url("imagen/nitrato.jpeg");
+    }
+    
+    #final h2{
+        font-size: 9vw;
+    }
+    footer{
+        background-color: rgb(230, 230, 230);
+    }
+    
+    footer p{
+        margin: 0;
+        padding: 12px;
+        color: rgb(100, 100, 100);
+    }
+    
+    footer .container{
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    
+    #jas-footer{
+        background-color:#b2b2b2;
+        justify-content: flex-end;
+        column-gap: 100px;
+        column-width: 200px;
+        color:black;
+        margin: 6px;
+    }
+
+}
